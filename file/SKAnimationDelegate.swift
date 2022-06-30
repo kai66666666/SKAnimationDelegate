@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SKAnimationDelegate: NSObject, CAAnimationDelegate {
+open class SKAnimationDelegate: NSObject, CAAnimationDelegate {
     @objc var animationDidStart: ((_ anim: CAAnimation) -> Void)?
     @objc var animationDidStop: ((_ anim: CAAnimation, _ finished: Bool) -> Void)?
     
