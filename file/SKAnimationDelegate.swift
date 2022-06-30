@@ -12,10 +12,10 @@ open class SKAnimationDelegate: NSObject, CAAnimationDelegate {
     @objc var animationDidStart: ((_ anim: CAAnimation) -> Void)?
     @objc var animationDidStop: ((_ anim: CAAnimation, _ finished: Bool) -> Void)?
     
-    func animationDidStart(_ anim: CAAnimation) {
+    public func animationDidStart(_ anim: CAAnimation) {
         animationDidStart?(anim)
     }
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         animationDidStop?(anim, flag)
     }
 }
