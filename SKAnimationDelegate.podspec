@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SKAnimationDelegate'
-  s.version          = '1.0'
+  s.version          = '1.2'
   s.summary          = 'SKAnimationDelegate.'
   s.homepage         = 'https://github.com/kai66666666/SKAnimationDelegate.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
