@@ -8,4 +8,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/kai66666666/SKAnimationDelegate.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
   s.source_files = 'file/*.swift'
+  s.swift_versions = ['5.0']
 end
