@@ -12,10 +12,10 @@ open class SKAnimationDelegate: NSObject {
     
     @objc public var animationDidStart: ((_ anim: CAAnimation) -> Void)?
     @objc public var animationDidStop: ((_ anim: CAAnimation, _ finished: Bool) -> Void)?
-    @objc public var showDeint = false
+    @objc public var showDeinit = false
     
     deinit {
-        if showDeint {
+        if showDeinit {
             print("SKAnimationDelegate deinit")
         }
     }
