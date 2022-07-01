@@ -1,6 +1,8 @@
 # SKAnimationDelegate
 CAAnimationDelegate闭包
 
+pod 'SKAnimationDelegate'
+
   let animationDelegate = SKAnimationDelegate()
   
   animationDelegate.animationDidStop = { [weak self] anim, finished in
