@@ -8,10 +8,19 @@
 
 import UIKit
 
-open class SKAnimationDelegate: NSObject, CAAnimationDelegate {
+open class SKAnimationDelegate: NSObject {
+    
     @objc public var animationDidStart: ((_ anim: CAAnimation) -> Void)?
     @objc public var animationDidStop: ((_ anim: CAAnimation, _ finished: Bool) -> Void)?
+    @objc public var showDeint = false
     
+    deinit {
+        if showDeint {
+            print("SKAnimationDelegate deinit")
+        }
+    }
+}
+extension SKAnimationDelegate: CAAnimationDelegate {
     public func animationDidStart(_ anim: CAAnimation) {
         animationDidStart?(anim)
     }
